@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Whiteboard</title>
+</head>
+
+<body onload="setUpCanvas()">
+<!-- Canvas -->
+  <div class="whiteboard">
+    <h2>Digital White Board</h2>
+    <canvas id='canvas' width='1100' height='580'>Canvas is not supported by your Browser</canvas>
+  </div>
+
+<!-- Tools -->
+  <div class="toolsPanel">
+  <!-- Pen 1 is selcted By default -->
+    <div id='tool1' class="tool selectedTool" onclick="selectTool(1)">
+      Pen 1
+    </div>
+    <div id='tool2' class="tool" onclick="selectTool(2)">
+      Pen 2
+    </div>
+    <div id='tool3' class="tool" onclick="selectTool(3)">
+      Pen 3
+    </div>
+    <div id='tool4' class="tool" onclick="selectTool(4)">
+      Eraser
+    </div>
+    <div id='tool5' class="tool" onclick="selectTool(5)">
+      Highlighter
+    </div>
+    <div id='reset' class="tool" onclick="reset()">
+      Reset
+    </div>
+  </div>
+
+</body>
+
+</html>
